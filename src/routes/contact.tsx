@@ -30,7 +30,7 @@ function ContactPage() {
             <InfoRow icon={MapPin} title="Visit Us" lines={["#72/73 Kenyetta Street,", "Uwani, Enugu, Nigeria"]} />
             <InfoRow icon={Phone} title="Call Us" lines={["08154780100", "09050377975"]} />
             <InfoRow icon={Mail} title="Email" lines={["info@bucheximpex.com"]} />
-            <InfoRow icon={Clock} title="Business Hours" lines={["Mon – Sat: 8AM – 6PM", "Sunday: Closed"]} />
+            <InfoRow icon={Clock} title="Business Hours" lines={["Mon – Sat: 8:00AM – 5:30PM", "Sunday: Closed"]} />
             <a href="https://wa.me/2348154780100" target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-2 rounded-full bg-whatsapp px-6 py-3 text-sm font-semibold text-whatsapp-foreground hover:opacity-90 transition-opacity">
               <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
             </a>
