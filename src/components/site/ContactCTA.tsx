@@ -6,7 +6,7 @@ export function ContactCTA() {
     <section className="py-20 md:py-28 bg-cream">
       <div className="container-x grid gap-10 lg:grid-cols-2 lg:items-start">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-          <span className="eyebrow">Let's Work Together</span>
+          <span className="eyebrow ">Let's Work Together</span>
           <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
             Let's Upgrade<br /><span className="text-primary">Your Space</span>
           </h2>

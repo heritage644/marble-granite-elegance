@@ -48,7 +48,7 @@ function ContactPage() {
               <Field label="Phone" name="phone" type="tel" />
               <div>
                 <label className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Service Needed</label>
-                <select className="mt-1.5 w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary/40">
+                <select title="b" className="mt-1.5 w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary/40">
                   <option>Kitchen Countertops</option>
                   <option>Marble Staircase</option>
                   <option>Bathroom Finishing</option>
@@ -103,7 +103,7 @@ function Field({ label, name, type = "text", required }: { label: string; name: 
   return (
     <div>
       <label className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">{label}</label>
-      <input
+      <input placeholder="nill"
         name={name} type={type} required={required}
         className="mt-1.5 w-full rounded-lg border border-border bg-background px-3 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-primary/40"
       />

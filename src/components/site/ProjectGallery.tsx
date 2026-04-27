@@ -9,8 +9,15 @@ import wall from "@/assets/wall-cladding.jpg";
 import bathroom from "@/assets/bathroom.jpg";
 import bathroom2 from "@/assets/bathroom-2.jpg";
 import hero from "@/assets/hero-kitchen.jpg";
-
-const imgs = [staircase2, staircase, countertop, kitchen, hero, wall, bathroom, bathroom2];
+import firstPic from "@/assets/image.png";
+import thirdPic from "@/assets/image copy 2.png"
+import secondDay from "@/assets/image copy.png"
+import fouthDay from "@/assets/image copy 3.png"
+import FifthDay from "@/assets/image copy 4.png"
+import sixthDay from "@/assets/image copy 5.png"
+import seventhDay from "@/assets/image copy 6.png"
+import eightDay from "@/assets/image copy 7.png"
+const imgs = [ secondDay,thirdPic, fouthDay, FifthDay, sixthDay, seventhDay, eightDay, firstPic];
 
 export function ProjectGallery() {
   return (
@@ -36,7 +43,7 @@ export function ProjectGallery() {
           ))}
         </div>
         <div className="mt-10 text-center">
-          <Link to="/projects" className="inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary-hover transition-colors">
+          <Link to="/projects" className="inline-flex items-center gap-2 rounded-sm bg-primary px-7 py-3 text-sm font-semibold text-primary-foreground hover:bg-primary-hover transition-colors">
             View More Projects <ArrowRight className="h-4 w-4" />
           </Link>
         </div>

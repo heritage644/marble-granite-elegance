@@ -29,7 +29,8 @@ const team = [
 function AboutPage() {
   return (
     <>
-      <PageHero eyebrow="About Us" title="Crafting Stone, Building Trust" description="A decade of premium granite and marble craftsmanship in Enugu." />
+      <PageHero eyebrow="About Us" title="Crafting Stone, Building Trust" description="A decade of premium
+       granite and marble craftsmanship in Enugu." />
 
       <section className="py-20 md:py-28">
         <div className="container-x grid gap-12 lg:grid-cols-2 lg:items-center">

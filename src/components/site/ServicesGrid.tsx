@@ -18,25 +18,30 @@ export function ServicesGrid() {
     <section className="py-20 md:py-28 bg-cream">
       <div className="container-x">
         <div className="text-center">
-          <span className="eyebrow center">Our Services</span>
+          <span className="eyebrow center flex flex-col">Our Services</span>
           <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold">What We Offer</h2>
         </div>
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14  grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {services.map((s, i) => (
-            <motion.div
+            <motion.div 
               key={s.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="group bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-elegant transition-all duration-500 hover:-translate-y-1"
+              className="group bg-white rounded-2xl overflow-hidden  shadow-card hover:shadow-elegant transition-all duration-500 hover:-translate-y-1"
             >
-              <div className="relative h-44 overflow-hidden">
-                <img src={s.img} alt={s.title} loading="lazy" className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                <div className="absolute -bottom-5 left-5 h-12 w-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-elegant">
-                  <s.icon className="h-5 w-5" />
-                </div>
+
+
+              <div className="relative h-44 z-0 overflow-hidden ">
+                <img src={s.img} alt={s.title} loading="lazy" className="h-full  w-full 
+                object-cover group-hover:scale-110 transition-transform z-0 duration-700" />
+              
               </div>
+
+
+
+
               <div className="p-6 pt-8">
                 <h3 className="text-lg font-semibold">{s.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{s.desc}</p>

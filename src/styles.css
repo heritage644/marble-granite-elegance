@@ -23,6 +23,7 @@
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
   --color-primary: var(--primary);
+  --color-yellow-primary: var(--yellow-primary);
   --color-primary-foreground: var(--primary-foreground);
   --color-primary-hover: var(--primary-hover);
   --color-secondary: var(--secondary);
@@ -60,6 +61,7 @@
   --popover-foreground: oklch(0.21 0.012 60);
 
   --primary: oklch(0.605 0.155 47);
+  --yellow-primary: oklch(91.093% 0.1902 101.346);
   --primary-foreground: oklch(1 0 0);
   --primary-hover: oklch(0.555 0.155 47);
 
@@ -127,27 +129,22 @@
   .eyebrow {
     text-transform: uppercase;
     letter-spacing: 0.18em;
-    font-size: 0.75rem;
-    font-weight: 600;
+    font-size: 0.85rem;
+    font-weight: 800;
     color: var(--color-primary);
     display: inline-flex;
     align-items: center;
     gap: 0.625rem;
   }
+  
   .eyebrow::after {
     content: "";
     width: 2.5rem;
-    height: 2px;
-    background: var(--color-primary);
+    height: 3px;
+    background: var(--color-yellow-primary);
     display: inline-block;
   }
-  .eyebrow.center::before {
-    content: "";
-    width: 2.5rem;
-    height: 2px;
-    background: var(--color-primary);
-    display: inline-block;
-  }
+  
   .container-x { max-width: 1200px; margin-left: auto; margin-right: auto; padding-left: 1.25rem; padding-right: 1.25rem; }
   @media (min-width: 768px) { .container-x { padding-left: 2rem; padding-right: 2rem; } }
 }
