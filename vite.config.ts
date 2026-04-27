@@ -7,5 +7,5 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
-  base: '/marble-granite-elegance/', // Must match your GitHub repo name exactly
+  base: '/', // Must match your GitHub repo name exactly
 })
