@@ -8,7 +8,6 @@ const NAV = [
   { to: "/about", label: "About Us" },
   { to: "/services", label: "Services" },
   { to: "/projects", label: "Our Work" },
-  { to: "/about", label: "Why Choose Us", hash: "#why" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
@@ -37,18 +36,18 @@ export function Navbar() {
         solid ? "bg-white/95 backdrop-blur-md shadow-[0_4px_24px_-12px_rgba(0,0,0,0.12)]" : "bg-transparent"
       }`}
     >
-      <div className="container-x flex h-20 items-center justify-between">
+      <div className="container-x flex h-25 items-center justify-between">
         <div className={solid ? "" : ""}>
           <Logo light={!solid} />
         </div>
 
-        <nav className="hidden lg:flex items-center gap-8">
+        <nav className="hidden lg:flex  items-center gap-8">
           {NAV.map((item) => (
             <Link
               key={item.label}
               to={item.to}
-              className={`text-sm font-medium transition-colors relative ${
-                solid ? "text-foreground hover:text-primary" : "text-white/90 hover:text-white"
+              className={`text-sm  font-medium transition-colors relative ${
+                solid ? "text-foreground hover:text-primary" : "text-white/90 hover:text-yellow-400 duration-300 pb-2 transition hover:border-b border-yellow-400"
               }`}
               activeProps={{ className: "text-primary" }}
               activeOptions={{ exact: item.to === "/" }}

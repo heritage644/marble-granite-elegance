@@ -24,32 +24,29 @@ export function Hero() {
 
       <div className="relative z-10 container-x flex min-h-screen items-center pt-28 pb-20">
         <motion.div variants={stagger} initial="initial" animate="animate" className="max-w-2xl text-white">
-          <motion.span variants={item} className="inline-flex items-center text-xs font-semibold tracking-[0.22em] text-primary uppercase">
+          <motion.span variants={item} className="inline-flex items-center text-xs
+           font-semibold tracking-[0.22em] text-yellow-400 uppercase">
             Premium Quality. Excellent Finish.
           </motion.span>
-          <motion.h1 variants={item} className="mt-5 font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05]">
+          <motion.h1 variants={item} className="mt-5 font-display text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold leading-[1.05]">
             Premium Granite<br />& Marble Finishes
           </motion.h1>
-          <motion.p variants={item} className="mt-6 max-w-xl text-base md:text-lg text-white/80 leading-relaxed">
-            Transform your kitchen, staircase, and interiors with high-quality granite and marble installations crafted to perfection.
+          <motion.p variants={item} className="mt-6 max-w-xl text-base md:text-lg  text-white/80 leading-relaxed">
+            Transform your kitchen, staircase, and <br /> interiors with high-quality granite and <br /> marble installations crafted to perfection.
           </motion.p>
           <motion.div variants={item} className="mt-8 flex flex-wrap gap-4">
             <a
               href="https://wa.me/2348154780100"
               target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-7 py-3.5 text-sm font-semibold text-whatsapp-foreground shadow-elegant hover:scale-[1.03] transition-transform"
+              className="inline-flex items-center gap-2  bg-whatsapp px-10 py-3.5 text-sm 
+              font-semibold text-whatsapp-foreground shadow-elegant hover:scale-[1.03] transition-transform"
             >
               <MessageCircle className="h-4 w-4" /> Chat on WhatsApp
             </a>
-            <Link
-              to="/projects"
-              className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/5 backdrop-blur px-7 py-3.5 text-sm font-semibold text-white hover:bg-white hover:text-foreground transition-colors"
-            >
-              View Projects <ArrowRight className="h-4 w-4" />
-            </Link>
+           
           </motion.div>
           <motion.div variants={item} className="mt-10 inline-flex items-center gap-2 text-sm text-white/80">
-            <BadgeCheck className="h-4 w-4 text-primary" />
+            <BadgeCheck className="h-5 w-5 text-green-400 " />
             Trusted by homes & businesses in Enugu
           </motion.div>
         </motion.div>
