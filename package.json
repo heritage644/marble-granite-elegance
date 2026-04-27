@@ -5,13 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "vinxi build",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "predeploy": "bun run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "bun run build"
+    
   },
   "dependencies": {
     "@cloudflare/vite-plugin": "^1.25.5",
