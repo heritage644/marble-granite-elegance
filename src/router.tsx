@@ -58,7 +58,7 @@ export const getRouter = () => {
   const router = createRouter({
     routeTree,
     context: {},
-    basepath: "/marble-granite-elegance",
+    basepath: "/",
     scrollRestoration: true,
     defaultPreloadStaleTime: 0,
     defaultErrorComponent: DefaultErrorComponent,
